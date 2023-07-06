@@ -11,10 +11,10 @@ import {
   BaiJamjuree_700Bold
 } from '@expo-google-fonts/bai-jamjuree'
 
-import blurBg from './src/assets/bg-blur.png'
-import Stripes from './src/assets/stripes.svg'
-import NLW from './src/assets/nlw-spacetime-logo.svg'
 import { styled } from 'nativewind'
+import blurBg from './src/assets/bg-blur.png'
+import NLW from './src/assets/nlw-spacetime-logo.svg'
+import Stripes from './src/assets/stripes.svg'
 
 const StyledStripes = styled(Stripes)
 
@@ -51,7 +51,7 @@ export default function App() {
         </View>
       </View>
 
-      <Text className='text-center font-body text-sm leading-relaxed text-gray-200'>Feito com 💜 por devGustavoR</Text>
+      <Text className='text-center font-body text-sm leading-relaxed text-gray-200'>Feito com 💜 no NLW da Rocketseat por devGustavoR</Text>
       <StatusBar style="light" translucent />
     </ImageBackground>
     </>
