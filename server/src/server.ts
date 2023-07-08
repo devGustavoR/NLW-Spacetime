@@ -10,8 +10,9 @@ const app = fastify()
 app.register(cors, {
   origin: true,
 })
-app.register(memoriesRoutes)
+
 app.register(authRoutes)
+app.register(memoriesRoutes)
 
 app
   .listen({
