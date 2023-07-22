@@ -18,7 +18,7 @@ import nlwLogo from '../assets/nlw-spacetime-logo.svg'
           </div>
 
           <a
-            href=""
+            href="/memories/new"
             className="inline-block rounded-full bg-green-500 px-5 py-5 font-alt text-sm uppercase leading-none text-black hover:bg-green-600"
           >
             Cadastrar lembrança
