@@ -27,8 +27,12 @@ export default function Layout(){
     BaiJamjuree_700Bold
   })
 
-  useEffect({} => {
-    SecureStore.getItem
+  useEffect(() => {
+    SecureStore.getItemAsync('token').then(token =>{
+      console.log(!!token)
+
+      setIsUserAuthenticated(!!token)
+    })
   },[])
 
   if (!hasLoadedFonts) {
@@ -44,7 +48,13 @@ export default function Layout(){
       <Stack screenOptions={{
         headerShown: false,
         contentStyle:{backgroundColor:'transparent'},
-      }}/>
+      }}>
+        
+        <Stack.Screen name="index" redirect={isUserAuthenticated}/>
+        <Stack.Screen name="new"/>
+        <Stack.Screen name="memories"/>
+
+      </Stack>
       </ImageBackground>
   )
 }
